@@ -15,6 +15,9 @@
                     @endif
 
                     {{ __('You are logged in!') }}
+                    @if (Auth::check())
+                        <span>{{Auth::user()->name . " " . Auth::user()->first . ", " . Auth::user()->age }}</span>
+                    @endif
                 </div>
             </div>
         </div>

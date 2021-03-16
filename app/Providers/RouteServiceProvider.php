@@ -17,7 +17,7 @@ class RouteServiceProvider extends ServiceProvider
      *
      * @var string
      */
-    public const HOME = '/home';
+    public const HOME = '/'; //here the route uri can be modified from originally '/home' to anything
 
     /**
      * The controller namespace for the application.
